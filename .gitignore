@@ -1,0 +1,35 @@
+# WordPress специфичные файлы
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/cache/
+wp-content/backups/
+
+# Плагины и темы - исключаем установленные из репозитория
+# Если вы разрабатываете свой плагин или тему, удалите соответствующую строку
+# wp-content/plugins/
+# wp-content/themes/
+
+# Конфигурационные файлы WordPress
+wp-config.php
+.htaccess
+
+# Логи и файлы сессий
+*.log
+.idea
+*.swp
+*.swo
+*.swn
+.DS_Store
+Thumbs.db
+
+# Файлы Docker
+.docker-sync/
+docker-compose.override.yml
+
+# Файлы баз данных
+*.sql
+*.sql.gz
+
+# Локальные файлы разработки
+*.env
