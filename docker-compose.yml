@@ -26,7 +26,8 @@ services:
       - ./bot-config.php:/var/www/html/bot-config.php
       - ./set-webhook.php:/var/www/html/set-webhook.php
       - ./telegram-bot.php:/var/www/html/telegram-bot.php
-      - ./telegram-to-wp.php:/var/www/html/wp-content/plugins/telegram-to-wp.php
+      - ./telegram-to-wp.php:/var/www/html/wp-content/plugins/telegram-to-wp/telegram-to-wp.php
+      - ./test-rest-api.php:/var/www/html/wp-content/plugins/test-rest-api/test-rest-api.php
     ports:
       - "8000:80"
     restart: always
