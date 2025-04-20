@@ -22,6 +22,10 @@ services:
     image: wordpress:latest
     volumes:
       - ./wp-content:/var/www/html/wp-content
+      - ./telegram-webhook.php:/var/www/html/telegram-webhook.php
+      - ./bot-config.php:/var/www/html/bot-config.php
+      - ./set-webhook.php:/var/www/html/set-webhook.php
+      - ./telegram-bot.php:/var/www/html/telegram-bot.php
     ports:
       - "8000:80"
     restart: always
@@ -32,6 +36,8 @@ services:
       WORDPRESS_DB_NAME: wordpress
     networks:
       - wpsite
+      
+
 
 networks:
   wpsite:
